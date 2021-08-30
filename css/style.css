@@ -1,9 +1,20 @@
 /* Global styles
 ---------------------------------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
     color: #343434; /* dark gray*/
     color: #F7FFF7;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 img {
@@ -18,7 +29,18 @@ a:hover {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+
 h2 {
+    font-size: 45px;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -38,6 +60,7 @@ header {
 ---------------------------------------------------*/
 .projects {
     background: #F7FFF7;
+    color: #2F3061;
 }
 
 .projects a {
@@ -55,6 +78,21 @@ header {
 
 .projects .btn:hover {
     background: rgba(47, 48, 97, 80%);
+}
+
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
 }
 
 
